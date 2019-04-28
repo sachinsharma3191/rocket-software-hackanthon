@@ -1,0 +1,19 @@
+<br/>
+<table id="myTable">
+    <tr class="header">
+        <th>No.</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Postal Code</th>
+    </tr>
+    <tbody>
+        <tr *ngFor="let addr of dataSource; let i = index; ">
+            <td>{{i}}</td>
+            <td>{{addr.address}}</td>
+            <td>{{addr.city}}</td>
+            <td>{{addr.state}}</td>
+            <td>{{addr.postalCode}}</td>
+        </tr>
+    </tbody>
+</table>
