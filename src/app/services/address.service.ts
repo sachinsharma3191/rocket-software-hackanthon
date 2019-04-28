@@ -21,15 +21,16 @@ export class AddressService {
         addresses = shelter.addresses;
       }
       else if( type === "food"){
-        addresses = restaurant.addresses.slice(100,303);
+        addresses = restaurant.addresses.slice(400,1000);
       }
       else if( type  === "healthcare"){
-        addresses = medical.addresses.slice(300,504);
+        addresses = medical.addresses.slice(100,499);
       }
-
+      let counter = 0;
       for(let add in addresses){
         let addressObject = {}
         let address = addresses[add];
+        addressObject["position"] = ++counter;
         addressObject["address"] = address["address1"] + " " + address["address2"];
         addressObject["city"] = address["city"];
         addressObject["state"] = stateAbbrevList.filter(state => state.abbreviation === address["state"])[0].name;

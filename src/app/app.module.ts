@@ -1,4 +1,5 @@
-import { FormsModule } from '@angular/forms';
+import { AuthService } from './auth/auth.service';
+import { FormsModule ,ReactiveFormsModule} from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule} from '@angular/router';
@@ -10,6 +11,12 @@ import { HealthcareComponent} from './components/healthcare/healthcare.component
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
+import {MatTableModule} from '@angular/material/table'
+import {MatPaginatorModule} from '@angular/material/paginator';
+import { AgmCoreModule } from '@agm/core';
+import { SignupComponent } from './auth/signup/signup.component';
+import { SigninComponent } from './auth/signin/signin.component';
+import { MapComponent } from './components/map/map.component';
 
 
 @NgModule({
@@ -18,7 +25,10 @@ import {MatButtonModule} from '@angular/material/button';
     ShelterComponent,
     HealthcareComponent,
     FoodComponent,
-    
+    SignupComponent,
+    SigninComponent,
+    MapComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -26,9 +36,15 @@ import {MatButtonModule} from '@angular/material/button';
     BrowserAnimationsModule,
     MatInputModule,
     FormsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTableModule,
+    MatPaginatorModule,
+    ReactiveFormsModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCCraWCz0fI4JwuSnRXnGnEeypCPDvXV8A'
+    })
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
