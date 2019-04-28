@@ -15,7 +15,7 @@ export class ShelterComponent implements OnInit {
 
   ngOnInit() {
     
-    console.log(this.dataSource);
+   
   }
 
 }
