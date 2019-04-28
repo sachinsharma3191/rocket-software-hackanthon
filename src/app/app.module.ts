@@ -1,4 +1,4 @@
-import { AuthService } from './auth/auth.service';
+
 import { FormsModule ,ReactiveFormsModule} from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -14,8 +14,6 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatTableModule} from '@angular/material/table'
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { AgmCoreModule } from '@agm/core';
-import { SignupComponent } from './auth/signup/signup.component';
-import { SigninComponent } from './auth/signin/signin.component';
 import { MapComponent } from './components/map/map.component';
 
 
@@ -25,8 +23,6 @@ import { MapComponent } from './components/map/map.component';
     ShelterComponent,
     HealthcareComponent,
     FoodComponent,
-    SignupComponent,
-    SigninComponent,
     MapComponent,
 
   ],
@@ -44,7 +40,7 @@ import { MapComponent } from './components/map/map.component';
       apiKey: 'AIzaSyCCraWCz0fI4JwuSnRXnGnEeypCPDvXV8A'
     })
   ],
-  providers: [AuthService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
