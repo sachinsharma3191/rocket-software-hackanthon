@@ -9,7 +9,6 @@ import { FoodComponent} from './components/food/food.component';
 import { HealthcareComponent} from './components/healthcare/healthcare.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatInputModule} from '@angular/material/input';
-import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +16,6 @@ import { HomeComponent } from './components/home/home.component';
     ShelterComponent,
     HealthcareComponent,
     FoodComponent,
-    HomeComponent,
   ],
   imports: [
     BrowserModule,

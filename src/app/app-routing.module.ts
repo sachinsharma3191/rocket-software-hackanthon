@@ -3,13 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { ShelterComponent} from './components/shelter/shelter.component';
 import { FoodComponent} from './components/food/food.component';
 import { HealthcareComponent} from './components/healthcare/healthcare.component';
-import { HomeComponent} from './components/home/home.component';
-
-
 
 const routes: Routes = [
-  { path: 'shelter', 
-    component: ShelterComponent 
+  { path: 'shelter',
+    component: ShelterComponent
   },
   {
     path: 'food',
@@ -17,11 +14,7 @@ const routes: Routes = [
   },
   { path: 'healthcare',
     component: HealthcareComponent
-  },{
-    path: 'home',
-    component: HomeComponent
-  },
-  { path: '', pathMatch: 'full', redirectTo: '/home' },
+  }
 ];
 
 @NgModule({

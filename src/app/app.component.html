@@ -1,18 +1,209 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!!
-  </h1>
-  <nav>
-    <a routerLink="shelter" routerLinkActive="active">Shelter</a>
-    <a routerLink="food">Discounted Food Services</a>
-    <a routerLink="healthcare">HealthCare and Medical Services</a>
-  </nav>
-  <router-outlet></router-outlet>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!--<link rel="stylesheet" href="style.css">
+    -->
+
+    <title>Helping hands</title>
+</head>
+
+<body class="back">
+    <div class="top_panel row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6 head_title" style="font-style: italic;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size: 71px;">
+            <p>
+                <font color="white">Helping Hands...</font>
+            </p>
+        </div>
+        <!-- <div class="col-sm-3"><img class="image" src="helpinghandsimg.jpg"></div> -->
+        <div class="col-sm-3"></div>
+    </div>
 
 
-<router-outlet></router-outlet>
+    <!-- About section -->
+    <div>
+        <div class="about">
+            <p> "Helping hands is platform which works to prevent and end homelessness through a range of support services including food, medical and emergency shelters. By the application you can search food, medical and shelters near you."
+                <!-- Once we engage homeless individuals, including youth and families, we stay with them for as long as it takes to return them to self-sufficiency." -->
+            </p>
+            <p style="font-size: 23px;font-style: italic;font-weight: bold">**If you used our application to find a resource, mention it at the centre and get the services free-of-cost</p>
+        </div>
+
+
+
+    </div>
+
+
+    <br>
+
+    <p style="font-size: 18px">
+        <font color="white">=> Search for the <strong>service</strong> and the <strong>state for which you need the service</strong> from the dropdown</font>
+    </p>
+
+
+    <div class="container">
+        <!-- <h2>Basic Panel</h2> -->
+        <div class="panel panel-default col-md-12" style="
+            height: 118px;">
+            <div class="panel-body col-md-12">
+                <div class="col-md-3 hello" style="text-align: center">
+                    <p style="font-size: 20px;">I want to search</p>
+                </div>
+                <div class="col-md-2">
+                    <div class="dropdown ">
+                        <button class="btn btn-primary dropdown-toggle hello" type="button" data-toggle="dropdown">Service Needed
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Food</a></li>
+                            <li><a href="#">Shelter</a></li>
+                            <li><a href="#">Medical services</a></li>
+                        </ul>
+                    </div>
+                </div>
 
 
 
 
+                <div class="col-md-1 hello">
+                    <p style="font-size: 20px;">in</p>
+                </div>
+                <div class="dropdown col-md-4">
+                    <button class="btn btn-primary dropdown-toggle hello" type="button" data-toggle="dropdown">State where service is needed
+                            <span class="caret"></span></button>
+                    <ul class="dropdown-menu hello">
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                    </ul>
+                </div>
+
+
+
+
+
+
+                <div class="col-md-2 hello"> <i class="fa fa-binoculars" aria-hidden="true" style="font-size:25px"></i>&nbsp;&nbsp;<button class="btn btn-primary submit">Search</button></div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+
+
+    <!-- Jobs section -->
+    <div class="container">
+        <p style="font-size: 28px;font-weight: bold">Earn a living:</p>
+        <p style="font-size: 20px;font-weight: bold">Job Portal: Current available Jobs (updated weekly) - April 28th to May 5th </p>
+        <ul style="font-size: 18px;">
+            <li>Helper needed - contact 1234566782</li>
+            <li>Assistant needed - contact 6543224482</li>
+            <li>Help needed in shop - contact 1234566782</li>
+            <li>Have a good build? Can train people? - contact 1234566782</li>
+
+
+        </ul>
+
+
+    </div>
+    <br>
+
+
+
+
+    <!-- Testimonial section -->
+    <div class="container">
+        <p style="font-size: 20px;font-weight: bold">
+            <font color="white">Testimonials:
+            </font>
+        </p>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+
+                    <!-- Bottom Carousel Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#quote-carousel" data-slide-to="1"></li>
+                        <li data-target="#quote-carousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Carousel Slides / Quotes -->
+                    <div class="carousel-inner">
+
+                        <!-- Quote 1 -->
+                        <div class="item active">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <font color="white">
+                                        <p style="font-size: 20px;">
+                                            <font color="white">&ldquo;Using this application was easy. I no longer sleep hungry!!&rdquo;</font>
+                                        </p>
+                                        <small><strong>Anonymous</strong></small>
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quote 2 -->
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <font color="white">
+                                        <p style="font-size: 20px;">
+                                            <font color="white">&ldquo;If helping hands was not there, I wouldn't be here talking to you right now.&rdquo;
+                                            </font>
+                                        </p>
+                                        <small><strong>abcd</strong></small></font>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quote 3 -->
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <font color="white">
+                                        <p style="font-size: 20px;">
+                                            <font color="white">&ldquo;Cooperate individuals. God bless them!!&rdquo;</font>
+                                        </p>
+                                        <small><strong>hey123</strong></small></font>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            //carousel options
+            $('#quote-carousel').carousel({
+                pause: true,
+                interval: 10000,
+            });
+        });
+    </script>
+
+</body>
+
+</html>
