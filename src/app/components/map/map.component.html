@@ -1,6 +1,6 @@
 <br/>
 <button mat-raised-button color="primary" (click)="navigateBack()">Go Back</button>
-<h1>{{source}} Location</h1>
+<h1>{{source | uppercase}} Location</h1>
 <agm-map [zoom]="zoom" [disableDefaultUI]="false" [zoomControl]="false" [latitude]='lat' [longitude]='long' [zoom]="9">
     <agm-marker [latitude]="lat" [longitude]="long" [opacity]="alpha" [markerDraggable]="true" (markerClick)="selectMarker($event)"></agm-marker>
 </agm-map>
