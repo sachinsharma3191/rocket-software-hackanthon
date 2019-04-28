@@ -7,10 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'rocket-build';
-services = ["Discounted Food","Medical Service","Shelter"];
-  
-onClickMe(){
-    alert();
-   
-  }
+ 
 }
