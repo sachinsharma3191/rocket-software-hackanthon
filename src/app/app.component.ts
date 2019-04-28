@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as firebase from 'firebase';
+//import * as firebase from 'firebase';
 
 const config = {
   apiKey: "AIzaSyClbYhiX-oQbxs8UJzG6rbbmePYDz0GK80",
@@ -19,6 +19,6 @@ export class AppComponent implements   OnInit {
   title = 'rocket-build';
 
     ngOnInit(){
-        firebase.initializeApp(config);
+        //firebase.initializeApp(config);
     }
 }
