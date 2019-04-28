@@ -4,6 +4,8 @@ import { ShelterComponent} from './components/shelter/shelter.component';
 import { FoodComponent} from './components/food/food.component';
 import { HealthcareComponent} from './components/healthcare/healthcare.component';
 
+
+
 const routes: Routes = [
   { path: 'shelter',
     component: ShelterComponent

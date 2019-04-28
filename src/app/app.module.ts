@@ -9,6 +9,8 @@ import { FoodComponent} from './components/food/food.component';
 import { HealthcareComponent} from './components/healthcare/healthcare.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
+
 
 @NgModule({
   declarations: [
@@ -16,13 +18,15 @@ import {MatInputModule} from '@angular/material/input';
     ShelterComponent,
     HealthcareComponent,
     FoodComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatInputModule,
-    FormsModule
+    FormsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
