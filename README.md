@@ -1,6 +1,9 @@
 # Rocket Software Hackathon
 
+Rocket Software in collaboration with IBM has organised hackathon in SJSU to combat homelessness in Bay Area.Homeless people are deprived of basic amenties.This web application provides information of home shelter,medical and food center to people.This is a smaller step in combating homelessness.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+
 
 ## Introduction
 
